@@ -77,9 +77,9 @@ export default class CommentBox extends Component {
         <div className="comment-box">
           <CommentForm user={this.props.user} addComment={this._addComment.bind(this)}/>
           <div className='d-flex flex-row align-items-baseline mt-2'>
-          <h5 className="comment-count">
+          <h6 className="comment-count">
             {this._getCommentsTitle(comments.length)}
-          </h5>
+          </h6>
           <button className='btn show-comments-btn' id="comment-reveal" onClick={this._handleClick.bind(this)}>
             {buttonText}
           </button>

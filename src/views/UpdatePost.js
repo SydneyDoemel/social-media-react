@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
-
+import "../styles/styles.css"
 export default function UpdatePost({ user }) {
 
     // use state always return the state variable and a function to setState
@@ -49,7 +49,9 @@ export default function UpdatePost({ user }) {
 
 
     return (
-        <form className='col-4' onSubmit={(e) => { sendUpdates(e) }}>
+        <div className=' d-flex flex-column justify-content-center align-items-center mx-auto update-container'>
+        <h1 className='my-5 text-center create-post-header '>Update Post</h1>
+        <form className='mx-4 mb-auto' onSubmit={(e) => { sendUpdates(e) }}>
 
             <div className="mb-3">
                 <label className="form-label">Title</label>
@@ -64,7 +66,8 @@ export default function UpdatePost({ user }) {
                 <input type="text" className="form-control" name='imgUrl' defaultValue={post.img_url}/>
             </div>
 
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button type="submit" className="btn btn-primary update">Submit</button>
         </form>
+        </div>
     )
 }

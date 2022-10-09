@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import Post from '../components/Post';
-
+import "../styles/styles.css"
 export default function ViewUserProfile({user}) {
     const [posts, setPosts]=useState([])
     const [user_name, setUser_name]=useState()
@@ -34,8 +34,8 @@ export default function ViewUserProfile({user}) {
         
     },[])
   return (
-    <div>
-      <h4>User: {user_name}</h4>
+    <div className='user-profile-container'>
+      <h4 className='display-5'>@{user_name}</h4>
        <div>
         {showPosts()}
        </div>

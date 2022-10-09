@@ -1,0 +1,12 @@
+$darkColor: rgb(22, 21, 22);
+$medDarkColor:rgb(35,33,51);
+$brightGreenYellow: rgb(229, 241, 60);
+$lavenderColor: rgb(182, 138, 253);
+$darkLavenderColor: rgba(182, 138, 253, .5);
+$oliveGreenColor: #babc3b;
+
+@mixin containerSetup($height, $bgcolor){
+    min-height: 100vh;
+    background-color:$bgcolor;
+    height: $height;
+}

@@ -52,9 +52,9 @@ export default function Login({logMeIn}) {
     };
 
   return redirect ? <Navigate to='/'/> :(
-    <div className='container sign-up-container'>
+    <div className=' sign-up-container'>
     <h3 className='display-3 pt-4 text-center pb-2'>Log In</h3>
-    <form className='d-flex flex-column mx-5 py-3 justify-content-center' onSubmit={(e) => {sendBasicAuth(e) }}>
+    <form className='login-form d-flex flex-column mx-5 py-3 justify-content-center' onSubmit={(e) => {sendBasicAuth(e) }}>
 
                 <div className="mb-3">
                     <label htmlFor="exampleInputEmail1" className="form-label">Username</label>

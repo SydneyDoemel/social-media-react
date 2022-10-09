@@ -34,9 +34,9 @@ export default function SignUp() {
     };
 
   return redirect ? <Navigate to="/login"/>:(
-    <div className='container sign-up-container'>
+    <div className=' sign-up-container'>
         <h3 className='display-3 pt-4 text-center pb-2'>Sign Up</h3>
-    <form className='d-flex flex-column mx-5 py-3 justify-content-center' onSubmit={(e)=>{sendSignUpInfo(e)}}>
+    <form className='signup-form d-flex flex-column mx-5 py-3 justify-content-center' onSubmit={(e)=>{sendSignUpInfo(e)}}>
 
     <div className="mb-3">
         <label htmlFor="exampleInputEmail1" className="form-label">Username</label>
@@ -58,7 +58,7 @@ export default function SignUp() {
         <input type="password" className="form-control" name='confirmPassword'/>
     </div>
     
-    <button type="submit" className="btn btn-signin mt-3 w-50">Submit</button>
+    <button type="submit" className="btn btn-signin mt-3 w-50">Sign Up</button>
 </form>
 </div>
   )

@@ -36,9 +36,9 @@ export default function MyFeed({user}) {
         
     },[])
   return (
-    <div className='container myfeed-container'>
+    <div className=' myfeed-container'>
         <div className=''>
-            <div className='d-flex flex-column w-100'>
+            <div className='my-feed-posts w-100'>
             {showPosts()}
             
             </div>

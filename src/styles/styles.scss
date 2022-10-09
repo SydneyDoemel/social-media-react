@@ -1,143 +1,137 @@
-/* .app{
+@import './variables';
+@import './responsive';
+.app{
     font-family: 'Tajawal', sans-serif;
-
-
-
 }
+
 .ig-cont{
     width: 90%;
 }
-.ig-container{
-   
-    
-    background-color: rgb(22, 21, 22);
 
+.ig-container{
+    @include containerSetup($darkColor);
+    
 }
+
 .create-container{
-    background-color: rgb(22, 21, 22);
-height: 100vh;
+    @include containerSetup($darkColor, 100vh);
+   
 }
+
 .update-container{
-    background-color: rgb(22, 21, 22);
-    height: 100vh;
-  color: white;
+    @include containerSetup($darkColor, 100vh);
+    color: white;
+    form{
+        width: 60%;
+    };
 }
-.update-container form{
-    width: 60%;
-}
+
+
 button.update{
-    background-color: rgb(182, 138, 253);
+    background-color: $lavenderColor;
     border: none;
     width: 30%;
     border-radius: 20px;
     font-size: 1.2rem;
 }
-.myfeed-container{
-    background-color: rgb(22, 21, 22);
-height: inherit;
 
+.myfeed-container, .profile-container, .sign-up-container{
+    @include containerSetup($darkColor, inherit);
 }
-.profile-container{
-    background-color: rgb(22, 21, 22);
-height: inherit;
-min-height: 100vh;
 
-}
-.sign-up-container{
-    background: rgb(97,150,84);
-    background-color: rgb(22, 21, 22);
-    color: white;
-height: 100vh;
-}
+
 
 .user-profile-container{
-    background-color: rgb(22, 21, 22);
-    height: inherit;
-    min-height: 100vh;
+    @include containerSetup($darkColor, inherit);
+    h4{
+        color: white;
+        text-align: center;
+        padding-top: 2vh;
+    }
 }
-.user-profile-container h4{
-    color: white;
-    text-align: center;
-    padding-top: 2vh;
-}
+
 .post-container{
-    
     padding: 0;
     margin: auto;
 }
+
 nav.navbar.navbar-expand-lg.bg-light{
-  
-    background-color: rgb(35,33,51);
+    background-color: $medDarkColor;
     color: white;
-    
 }
+
 nav{
-    background-color: rgb(35, 33, 51);
+    background-color: $medDarkColor;
     color: white;
-    
 }
+
 h4.user-handle{
     text-decoration:none;
     color: white;
+    &:hover{text-decoration:none;
+    color: $lavenderColor;};
+    &:active{ text-decoration:none;
+        color: $lavenderColor;};
 }
-h4.user-handle:hover, h4.user-handle:active{
-    text-decoration:none;
-    color: rgb(182, 138, 253);
-}
-a,
-a:link,
-a:visited,
-a:hover,
-a:active{
+
+
+a, a:link, a:visited, a:hover, a:active{
     text-decoration: none;
 }
+
 .card{
     background-color: rgb(5, 5, 5);
     color: white;
     filter: drop-shadow(0 0 0.75rem rgba(152, 118, 202, 0.2));
    border-radius: 5px;
-
-margin: 0px 15px 0px 15px;
+    margin: 0px 15px 0px 15px;
 }
+
 .card-, .flex-card-big{
     background-color: rgb(5, 5, 5);
 }
+
 .card-img-top{
     width: 100%;
     max-width: 300px;
     height: auto;
     margin-left: 10px;
 }
+
 .login-form{
     border-radius: 153px 200px 90px 182px;
     -moz-border-radius: 153px 200px 90px 182px;
     -webkit-border-radius: 153px 200px 90px 182px;
     border: 0px solid #000000;
-background-color: rgba(182, 138, 253, .5);
+background-color: $darkLavenderColor;
 }
+
 .signup-form{
     border-radius: 153px 200px 90px 182px;
     -moz-border-radius: 153px 200px 90px 182px;
     -webkit-border-radius: 153px 200px 90px 182px;
     border: 0px solid #000000;
-background-color: rgba(182, 138, 253, .5);
+background-color: $darkLavenderColor;
 }
+
 .img-wrapper{
- background-color: rgb(182, 138, 253);
+ background-color: $lavenderColor;
  width: 89%;
  border-radius: 121px 57px 152px 7px;
 -moz-border-radius: 121px 57px 152px 7px;
 -webkit-border-radius: 121px 57px 152px 7px;
 border: 0px solid #000000;
- 
 }
+
 .explore-header{
-    color: rgba(182, 138, 253, .6);
+    color: $darkLavenderColor;
 }
+
 .my-feed-posts{
     display: flex;
     flex-direction: column;
 }
+
 .btn-edit{
     background-color: #aed988;
     color: white;
@@ -149,36 +143,39 @@ border: 0px solid #000000;
     color: white;
     font-size: 1.1rem;
 }
+
 .btn-follow, .post-btn{
-    background-color: rgb(182, 138, 253);
+    background-color: $lavenderColor;
     border-radius: 25px;
     font-size: 1.2rem;
     padding-top: 8px;
     color: rgb(255, 255, 255);
     border: none;
     margin:auto;
-
 }
+
 .btn-signin{
-    background-color:rgb(229, 241, 60);
+    background-color:$brightGreenYellow;
     color: rgb(68, 68, 68);
     font-weight: bold;
     font-size: 1.1rem;
 }
+
 input.title-input, input.caption-input, input.img-input{
     border: solid 1px rgba(0, 0, 0, 0.5);
     font-size: 1.5rem;
 }
+
 input.title-input, input.caption-input{
     border-bottom: none;
 }
+
 input.caption-input{
     padding-bottom: 10rem;
     border-radius: 0px 0px 0px 0px;
     -moz-border-radius: 0px 0px 0px 0px;
     -webkit-border-radius: 0px 0px 0px 0px;
-    border: 5px double #758025;
-
+    border: 5px double $oliveGreenColor
 }
 
 input.title-input{
@@ -186,7 +183,7 @@ input.title-input{
     border-radius: 23px 23px 0px 0px;
 -moz-border-radius: 23px 23px 0px 0px;
 -webkit-border-radius: 23px 23px 0px 0px;
-border: 5px double #758025;
+border: 5px double $oliveGreenColor;
 border-bottom: none;
 }
 
@@ -195,19 +192,20 @@ input.img-input{
     border-radius: 0px 0px 23px 23px;
 -moz-border-radius: 0px 0px 23px 23px;
 -webkit-border-radius: 0px 0px 23px 23px;
-border: 5px double #758025;
+border: 5px double $oliveGreenColor;
 border-top: none;
-   
 }
+
 .create-post-header{
     font-size: 2.5rem;
     color: white
 }
+
 input[type=file]::file-selector-button {
-    border: 2px solid rgb(229, 241, 60);
+    border: 2px solid $brightGreenYellow;
     padding: .2em .4em;
     border-radius: .2em;
-    background-color: rgb(229, 241, 60);
+    background-color: $brightGreenYellow;
     transition: 1s;
   }
   
@@ -215,101 +213,68 @@ input[type=file]::file-selector-button {
     background-color: #81ecec;
     border: 2px solid #00cec9;
   }
+
 .post-btn{
     font-size: 1.5rem;
 }
+
 .btn-outline-success{
-    border: 1px solid rgb(229, 241, 60);
-    color: rgb(229, 241, 60);
+    border: 1px solid $brightGreenYellow;
+    color: $brightGreenYellow;
 }
+
 .or, #myFile{
     margin-left: 3vw;
     color: white;
 }
+
 .or{
     margin-top: 2vh;
 }
+
 a.nav-link, div.dropdown{
     text-align: center;
     color: white;
 }
+
 a.nav-link:focus, a.nav-link:hover{
-    color: #abc082;
+    color: $oliveGreenColor;
 }
 
 .navbar-brand{
     color: white;
+    &:hover{color: $oliveGreenColor;};
+    
 }
+
 span.navbar-toggler-icon{
     color:white;
 }
 
 button.dropdown-toggle{
-    background-color:rgb(229, 241, 60);
+    background-color:$brightGreenYellow;
     color: rgb(68, 68, 68);
     font-weight: bold;
     border: none;
     border-radius: 20px;
+    &:hover{background-color: $oliveGreenColor;
+        border: none;
+        border-radius: 20px;};
+    &:active{background-color: $oliveGreenColor;
+        border: none;
+        border-radius: 20px;};
+    &:focus{background-color: $oliveGreenColor;
+        border: none;
+        border-radius: 20px;};
 }
-button.dropdown-toggle:hover{
-    background-color: #99a730;
-    border: none;
-    border-radius: 20px;
-}
-button.dropdown-toggle:active{
-    background-color: #99a730;
-    border: none;
-    border-radius: 20px;
-}
-button.dropdown-toggle:focus{
-    background-color: #758025;
-    border: none;
-    border-radius: 20px;
-}
+
+
+
 div.dropdown-menu.show{
     width: 30%;
     margin: auto;
     margin-top: 5px;
 }
-@media screen and (min-width: 1000px) {
-   
-   .flex-card-big{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    
-   }
-  .card{
-    width: 100%;
-    max-width: 750px;
-    height: auto;
-    margin: auto;
-  }
-   .card-img-top{
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-left: 4vw;
-    padding: 3vh 0vh 3vh 0vh;
-   }
-   .card-body{
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding-left: 10vh;
-    
-   }
-   .card-title{
-    margin-right: 10px;
-    font-size: x-large;
-    flex-wrap: nowrap;
-   }
-   .card-caption{
-    margin: .6rem 0rem 0rem .5rem;
-   }
-  }
 
  .show-comments-btn, .send-btn{
     border: none;
@@ -324,8 +289,8 @@ div.dropdown-menu.show{
     border:none;
     resize: none;
     outline: none; 
-   
 }
+
 .comment-form{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -335,8 +300,8 @@ div.dropdown-menu.show{
     border-radius: 20px;
     padding: 7px 4px 4px 4px;
     background-color: white;
-    
 }
+
 .comment-form-actions{
     position:absolute;
     bottom: 3px;
@@ -347,43 +312,50 @@ div.dropdown-menu.show{
 .comment-header, .comment-body{
     font-size: 1rem;
 }
+
 .comment{
     width: 94%
 }
 
 .list-group-item{
-    background-color: rgb(182, 138, 253);
-   color: rgb(229, 241, 60);
+    background-color: $lavenderColor;
+   color: $brightGreenYellow;
    text-decoration: none;
-}
-.list-group-item p{
+   p{
     font-weight: bold;
-   color: rgb(229, 241, 60);
+   color: $brightGreenYellow;
    text-decoration: none;
 }
-button.unfollow{
-    border: 1px solid rgb(255, 138, 138);
-    color: rgb(255, 138, 138);
-    font-weight:  bold;
-
 }
+
+
+
+button.unfollow{
+    border: 1px solid rgb(238, 72, 72);
+    color: rgb(238, 72, 72);
+    font-weight:  bold;
+}
+
 button#contact-tab.nav-link{
-    color:rgb(229, 241, 60);
+    color:$brightGreenYellow;
 }
 
 button#profile-tab.nav-link{
-    color:rgb(229, 241, 60);
+    color:$brightGreenYellow;
 }
+
 button#home-tab.nav-link{
-    color:rgb(229, 241, 60);
+    color:$brightGreenYellow;
 }
+
 button#contact-tab.nav-link.active{
-    color: rgb(22, 21, 22);
+    color:$darkColor;
 }
 
 button#profile-tab.nav-link.active{
-    color: rgb(22, 21, 22);
+    color:$darkColor;
 }
+
 button#home-tab.nav-link.active{
-    color: rgb(22, 21, 22);
-} */
+    color:$darkColor;
+}

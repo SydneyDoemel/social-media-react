@@ -1,0 +1,421 @@
+@media screen and (min-width: 1000px) {
+  .flex-card-big {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
+  .card {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: auto;
+  }
+  .card-img-top {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-left: 4vw;
+    padding: 3vh 0vh 3vh 0vh;
+  }
+  .card-body {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vh;
+  }
+  .card-title {
+    margin-right: 10px;
+    font-size: x-large;
+    flex-wrap: nowrap;
+  }
+  .card-caption {
+    margin: 0.6rem 0rem 0rem 0.5rem;
+  }
+}
+.app {
+  font-family: "Tajawal", sans-serif;
+}
+
+.ig-cont {
+  width: 90%;
+}
+
+.ig-container {
+  background-color: rgb(22, 21, 22);
+}
+
+.create-container {
+  background-color: rgb(22, 21, 22);
+  height: 100vh;
+}
+
+.update-container {
+  background-color: rgb(22, 21, 22);
+  height: 100vh;
+  color: white;
+}
+.update-container form {
+  width: 60%;
+}
+
+button.update {
+  background-color: rgb(182, 138, 253);
+  border: none;
+  width: 30%;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+
+.myfeed-container {
+  background-color: rgb(22, 21, 22);
+  height: inherit;
+}
+
+.profile-container {
+  background-color: rgb(22, 21, 22);
+  height: inherit;
+  min-height: 100vh;
+}
+
+.sign-up-container {
+  background: rgb(97, 150, 84);
+  background-color: rgb(22, 21, 22);
+  color: white;
+  height: 100vh;
+}
+
+.user-profile-container {
+  background-color: rgb(22, 21, 22);
+  height: inherit;
+  min-height: 100vh;
+}
+.user-profile-container h4 {
+  color: white;
+  text-align: center;
+  padding-top: 2vh;
+}
+
+.post-container {
+  padding: 0;
+  margin: auto;
+}
+
+nav.navbar.navbar-expand-lg.bg-light {
+  background-color: rgb(35, 33, 51);
+  color: white;
+}
+
+nav {
+  background-color: rgb(35, 33, 51);
+  color: white;
+}
+
+h4.user-handle {
+  text-decoration: none;
+  color: white;
+}
+h4.user-handle:hover {
+  text-decoration: none;
+  color: rgb(182, 138, 253);
+}
+h4.user-handle:active {
+  text-decoration: none;
+  color: rgb(182, 138, 253);
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+.card {
+  background-color: rgb(5, 5, 5);
+  color: white;
+  filter: drop-shadow(0 0 0.75rem rgba(152, 118, 202, 0.2));
+  border-radius: 5px;
+  margin: 0px 15px 0px 15px;
+}
+
+.card-, .flex-card-big {
+  background-color: rgb(5, 5, 5);
+}
+
+.card-img-top {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.login-form {
+  border-radius: 153px 200px 90px 182px;
+  -moz-border-radius: 153px 200px 90px 182px;
+  -webkit-border-radius: 153px 200px 90px 182px;
+  border: 0px solid #000000;
+  background-color: rgba(182, 138, 253, 0.5);
+}
+
+.signup-form {
+  border-radius: 153px 200px 90px 182px;
+  -moz-border-radius: 153px 200px 90px 182px;
+  -webkit-border-radius: 153px 200px 90px 182px;
+  border: 0px solid #000000;
+  background-color: rgba(182, 138, 253, 0.5);
+}
+
+.img-wrapper {
+  background-color: rgb(182, 138, 253);
+  width: 89%;
+  border-radius: 121px 57px 152px 7px;
+  -moz-border-radius: 121px 57px 152px 7px;
+  -webkit-border-radius: 121px 57px 152px 7px;
+  border: 0px solid #000000;
+}
+
+.explore-header {
+  color: rgba(182, 138, 253, 0.5);
+}
+
+.my-feed-posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-edit {
+  background-color: #aed988;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.btn-del {
+  background-color: #d04b3f;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.btn-follow, .post-btn {
+  background-color: rgb(182, 138, 253);
+  border-radius: 25px;
+  font-size: 1.2rem;
+  padding-top: 8px;
+  color: rgb(255, 255, 255);
+  border: none;
+  margin: auto;
+}
+
+.btn-signin {
+  background-color: rgb(229, 241, 60);
+  color: rgb(68, 68, 68);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+input.title-input, input.caption-input, input.img-input {
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+}
+
+input.title-input, input.caption-input {
+  border-bottom: none;
+}
+
+input.caption-input {
+  padding-bottom: 10rem;
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  border: 5px double #babc3b;
+}
+
+input.title-input {
+  padding-bottom: 2rem;
+  border-radius: 23px 23px 0px 0px;
+  -moz-border-radius: 23px 23px 0px 0px;
+  -webkit-border-radius: 23px 23px 0px 0px;
+  border: 5px double #babc3b;
+  border-bottom: none;
+}
+
+input.img-input {
+  padding-bottom: 2rem;
+  border-radius: 0px 0px 23px 23px;
+  -moz-border-radius: 0px 0px 23px 23px;
+  -webkit-border-radius: 0px 0px 23px 23px;
+  border: 5px double #babc3b;
+  border-top: none;
+}
+
+.create-post-header {
+  font-size: 2.5rem;
+  color: white;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  border: 2px solid rgb(229, 241, 60);
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  background-color: rgb(229, 241, 60);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+input[type=file]::file-selector-button {
+  border: 2px solid rgb(229, 241, 60);
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  background-color: rgb(229, 241, 60);
+  transition: 1s;
+}
+
+input[type=file]::-webkit-file-upload-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+
+.post-btn {
+  font-size: 1.5rem;
+}
+
+.btn-outline-success {
+  border: 1px solid rgb(229, 241, 60);
+  color: rgb(229, 241, 60);
+}
+
+.or, #myFile {
+  margin-left: 3vw;
+  color: white;
+}
+
+.or {
+  margin-top: 2vh;
+}
+
+a.nav-link, div.dropdown {
+  text-align: center;
+  color: white;
+}
+
+a.nav-link:focus, a.nav-link:hover {
+  color: #babc3b;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+span.navbar-toggler-icon {
+  color: white;
+}
+
+button.dropdown-toggle {
+  background-color: rgb(229, 241, 60);
+  color: rgb(68, 68, 68);
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+}
+button.dropdown-toggle:hover {
+  background-color: #babc3b;
+  border: none;
+  border-radius: 20px;
+}
+button.dropdown-toggle:active {
+  background-color: #babc3b;
+  border: none;
+  border-radius: 20px;
+}
+button.dropdown-toggle:focus {
+  background-color: #babc3b;
+  border: none;
+  border-radius: 20px;
+}
+
+div.dropdown-menu.show {
+  width: 30%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.show-comments-btn, .send-btn {
+  border: none;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 82%;
+  position: relative;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.comment-form {
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid rgba(143, 143, 143, 0.5);
+  border-radius: 20px;
+  padding: 7px 4px 4px 4px;
+  background-color: white;
+}
+
+.comment-form-actions {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  width: 60px;
+}
+
+.comment-header, .comment-body {
+  font-size: 1rem;
+}
+
+.comment {
+  width: 94%;
+}
+
+.list-group-item {
+  background-color: rgb(182, 138, 253);
+  color: rgb(229, 241, 60);
+  text-decoration: none;
+}
+.list-group-item p {
+  font-weight: bold;
+  color: rgb(229, 241, 60);
+  text-decoration: none;
+}
+
+button.unfollow {
+  border: 1px solid rgb(255, 138, 138);
+  color: rgb(255, 138, 138);
+  font-weight: bold;
+}
+
+button#contact-tab.nav-link {
+  color: rgb(229, 241, 60);
+}
+
+button#profile-tab.nav-link {
+  color: rgb(229, 241, 60);
+}
+
+button#home-tab.nav-link {
+  color: rgb(229, 241, 60);
+}
+
+button#contact-tab.nav-link.active {
+  color: rgb(22, 21, 22);
+}
+
+button#profile-tab.nav-link.active {
+  color: rgb(22, 21, 22);
+}
+
+button#home-tab.nav-link.active {
+  color: rgb(22, 21, 22);
+}/*# sourceMappingURL=styles.css.map */

@@ -69,25 +69,25 @@ export default function Profile({user}) {
   return (
    <>
    <div className='profile-container'>
-   <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+   <ul className="nav nav-tabs" id="myTab" role="tablist">
+  <li className="nav-item" role="presentation">
+    <button className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
   </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Followers</button>
+  <li className="nav-item" role="presentation">
+    <button className="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Followers</button>
   </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Following</button>
+  <li className="nav-item" role="presentation">
+    <button className="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Following</button>
   </li>
 </ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-  <div className='d-flex flex-column w-75 mx-auto mt-5 ig-cont'>
+<div className="tab-content" id="myTabContent">
+  <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  <div className='d-flex flex-column mx-auto mt-5 ig-cont'>
             {showPosts()}
             
             </div>
     </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> <div className='d-flex justify-content-center text-center'>
+  <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> <div className='d-flex justify-content-center text-center'>
     <ul className='list-group mt-4 w-75'>
     {followers.map((p,i)=>{return(
         <Link to={`/posts/user/${p[1]}`}><li className='list-group-item text-center'>{p[0]}</li></Link>
@@ -96,12 +96,12 @@ export default function Profile({user}) {
         </ul>
         </div>
   </div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+  <div className="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
   <div className='d-flex justify-content-center text-center'>
   <ul  className='list-group mt-5 w-75 '>{following.map((p,i)=>{return(
-        <li className='d-flex flex-row list-group-item '><Link to={`/posts/user/${p[1]}`} className='me-auto'><p className=''>{p[0]}</p></Link>
+        <li className='d-flex flex-row list-group-item '><Link to={`/posts/user/${p[1]}`} className='me-auto'><p className=''>@{p[0]}</p></Link>
         <form onSubmit={(e)=>unfollowUser(e)}>
-            <button type="submit" className='btn btn-sm btn-outline-danger'>unfollow</button>
+            <button type="submit" className='btn btn-sm btn-outline-danger   unfollow'>unfollow</button>
             <input type='hidden' name='unfollow' defaultValue={p[0]} />
             </form>
             </li>

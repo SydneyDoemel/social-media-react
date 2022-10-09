@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+
 import Contact from './views/Contact'
 import Home from './views/Home'
 import Nav from './components/Nav'
@@ -25,6 +26,7 @@ import Comments from './components/Comment'
 import CommentBox from './components/CommentBox'
 import Comment from './components/Comment'
 import CommentForm from './components/CommentForm'
+
 // import Cart from './views/Cart'
 
 export default function App() {
@@ -119,6 +121,7 @@ export default function App() {
           <Route path='/posts/update/:postId' element={<UpdatePost user={user} />} />
           <Route path='/posts/:postId' element={<SinglePost user={user} />} />
           <Route path='/post' element={<Post currentUser={user} />} />
+        
           <Route path='/imgup' element={<ImageUpload currentUser={user} />} />
           <Route path='/profile' element={<Profile user={user} />} />
           <Route path='/myfeed' element={<MyFeed user={user} />} />

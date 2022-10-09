@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Post from '../components/Post'
 import { useParams, Link } from 'react-router-dom';
-
+import "../styles/styles.css"
 
 export default function SinglePost({ user }) {
     const { postId } = useParams()

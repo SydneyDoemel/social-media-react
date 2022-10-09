@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 import { Navigate } from 'react-router-dom';
-import '../app.css'
+
 import ImageUpload from '../components/ImageUpload';
 
 
@@ -44,13 +44,14 @@ export default function CreatePost({user}) {
             
                 {/* <label className="form-label">Caption</label> */}
                 <input type="text" className="caption-input" name='caption'  placeholder='Caption' maxLength='50'/>
-        
+               
           
                 {/* <label className="form-label">Image URL</label> */}
                 <input type="text" className="img-input"  name='imgUrl'  placeholder='Image Url'/>
                 {/* <input type="file" value={selectedFile}  onChange={(e) => setSelectedFile(e.target.files[0])} /> */}
            
-
+            <h5 className='or '>or</h5>
+            <input type="file" className='choose-file' id="myFile" name="filename"/>
             <button type="submit" className="btn btn-primary w-25 mt-3 post-btn">Post</button>
         </form>
     </div>

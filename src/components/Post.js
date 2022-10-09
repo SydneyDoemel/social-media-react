@@ -48,7 +48,7 @@ export default function Post({ postInfo, user }) {
   const showFollowers = () => {};
 
   return (
-    <div className="container post-container">
+    <div className="container post-container pt-3">
       <div className="card my-3">
         <div className="card-header d-flex">
           <div className="me-auto ">
@@ -66,7 +66,7 @@ export default function Post({ postInfo, user }) {
                 </button>
               </> ) : (<>
               <form onSubmit={(e) => { followUser(e); }} >
-                  <input type="hidden" name="user1_id" defaultValue={postInfo.id} />
+                  <input type="hidden" name="user1_id" defaultValue={postInfo.user_id} />
                   <button type="submit" className="btn btn-follow">
                     Follow
                   </button>
@@ -79,7 +79,7 @@ export default function Post({ postInfo, user }) {
             {postInfo.img_url ? (
               <>
                 <Link to={`/posts/${postInfo.id}`}></Link>
-                <img src={postInfo.img_url} className="card-img-top" alt="..." />
+               <div className="img-wrapper"> <img src={postInfo.img_url} className="card-img-top" alt="..." /></div> 
               </>
             ) : (
               <></>

@@ -21,11 +21,11 @@ export default class CommentForm extends Component {
       return (
         <form className="comment-form" onSubmit={this._handleSubmit.bind(this)}>
           <div className="comment-form-fields">
-            <input type='hidden' defaultValue={this.props.user.username} ref={(defaultValue) => this._author = defaultValue}></input><br />
-            <textarea placeholder="Write a comment..." rows="1"  required ref={(textarea) => this._body = textarea}></textarea>
+            <input type='hidden' defaultValue={this.props.user.username} ref={(defaultValue) => this._author = defaultValue}></input>
+            <textarea placeholder="SoundOff in the comments..." rows="1"  required ref={(textarea) => this._body = textarea}></textarea>
           </div>
           <div className="comment-form-actions">
-            <button type="submit" className='btn send-btn'><NavigationArrow size={32} mirrored={true} /></button>
+            <button type="submit" className='btn send-btn'><NavigationArrow size={28} mirrored={true} /></button>
           </div>
         </form>
       );
