@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function ImageUpload() {
-  return (
-    <div>ImageUpload</div>
-  )
+  return <div>ImageUpload</div>;
 }

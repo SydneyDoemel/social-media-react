@@ -61,12 +61,28 @@ export default function Post({ postInfo, user }) {
               <>
                 <Link to={`/posts/update/${postInfo.id}`}>
                   <button className="btn btn-edit">Edit</button>
-                </Link><button onClick={() => { deletePost(postInfo.id); }} className="btn btn-del ms-3" >
+                </Link>
+                <button
+                  onClick={() => {
+                    deletePost(postInfo.id);
+                  }}
+                  className="btn btn-del ms-3"
+                >
                   Delete
                 </button>
-              </> ) : (<>
-              <form onSubmit={(e) => { followUser(e); }} >
-                  <input type="hidden" name="user1_id" defaultValue={postInfo.user_id} />
+              </>
+            ) : (
+              <>
+                <form
+                  onSubmit={(e) => {
+                    followUser(e);
+                  }}
+                >
+                  <input
+                    type="hidden"
+                    name="user1_id"
+                    defaultValue={postInfo.user_id}
+                  />
                   <button type="submit" className="btn btn-follow">
                     Follow
                   </button>
@@ -75,23 +91,30 @@ export default function Post({ postInfo, user }) {
             )}
           </div>
         </div>
-          <div className="flex-card-big">
-            {postInfo.img_url ? (
-              <>
-                <Link to={`/posts/${postInfo.id}`}></Link>
-               <div className="img-wrapper"> <img src={postInfo.img_url} className="card-img-top" alt="..." /></div> 
-              </>
-            ) : (
-              <></>
-            )}
-            <div className="card-body">
-              <h5 className="card-title">{postInfo.title}</h5><p className="card-caption">{postInfo.caption}</p> 
-              
-            </div>
-          </div>
-          <div className="card-footer">
-              <CommentBox user={user}/>
+        <div className="flex-card-big">
+          {postInfo.img_url ? (
+            <>
+              <Link to={`/posts/${postInfo.id}`}></Link>
+              <div className="img-wrapper">
+                {" "}
+                <img
+                  src={postInfo.img_url}
+                  className="card-img-top"
+                  alt="..."
+                />
               </div>
+            </>
+          ) : (
+            <></>
+          )}
+          <div className="card-body">
+            <h5 className="card-title">{postInfo.title}</h5>
+            <p className="card-caption">{postInfo.caption}</p>
+          </div>
+        </div>
+        <div className="card-footer">
+          <CommentBox user={user} />
+        </div>
       </div>
     </div>
   );
